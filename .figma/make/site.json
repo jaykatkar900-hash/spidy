@@ -1,0 +1,10 @@
+{
+  "description": "This web application offers a personalized AI assistant named Spidy, designed to enhance productivity by managing tasks, answering queries, and providing support.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
