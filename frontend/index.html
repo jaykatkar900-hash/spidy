@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidy</title>
+    <meta name="description" content="Spidy personal assistant interface" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">spidy</div>
+        </div>
+
+        <button class="new-chat-btn">+ New chat</button>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <button class="nav-item active">
+            <span class="nav-icon">⌂</span>
+            <span>Home</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">✦</span>
+            <span>Chats</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">◈</span>
+            <span>Agents</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">☰</span>
+            <span>Library</span>
+          </button>
+          <button class="nav-item">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="label">Workspace</p>
+          <h3>Product Sprint</h3>
+          <ul>
+            <li>Research notes</li>
+            <li>3 active tasks</li>
+          </ul>
+        </div>
+
+        <div class="profile-row">
+          <div class="avatar">J</div>
+          <div class="profile-meta">
+            <strong>Jane</strong>
+            <span>Pro plan</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="topbar-kicker">Good morning</p>
+            <h1>How can I help today?</h1>
+          </div>
+
+          <div class="top-actions">
+            <button class="icon-btn">⌕</button>
+            <button class="icon-btn">☰</button>
+          </div>
+        </header>
+
+        <section class="hero-grid">
+          <div class="chat-panel">
+            <div class="message-row user-row">
+              <div class="message-bubble user-bubble">
+                I need a layout mockup for a personal assistant landing page and a simple onboarding flow.
+              </div>
+            </div>
+
+            <div class="message-row assistant-row">
+              <div class="assistant-tag">spidy</div>
+              <div class="message-bubble ai-bubble">
+                <p>
+                  Here’s a clean direction: a dark glass interface with a strong utility rail, a floating prompt area, and a compact summary panel for context and actions.
+                </p>
+
+                <div class="mockup-card">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot amber"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mockup-body">
+                    <div class="mini-sidebar">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="mockup-content">
+                      <div class="bar long"></div>
+                      <div class="bar short"></div>
+                      <div class="bar medium"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="insight-panel">
+            <div class="insight-card">
+              <p class="label">Today</p>
+              <h3>3 priority tasks</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar"><span></span></div>
+                <small>68% complete</small>
+              </div>
+            </div>
+
+            <div class="insight-card secondary">
+              <p class="label">Quick actions</p>
+              <ul>
+                <li>Generate brief</li>
+                <li>Draft workflow</li>
+                <li>Summarize notes</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <div class="suggestions">
+          <button>Plan a launch</button>
+          <button>Write a summary</button>
+          <button>Brainstorm ideas</button>
+        </div>
+
+        <div class="composer">
+          <div class="composer-row">
+            <button class="chip">+ Add context</button>
+            <button class="chip muted">Voice</button>
+          </div>
+          <textarea rows="4" placeholder="Ask spidy anything…"></textarea>
+          <div class="composer-actions">
+            <span>Attach file</span>
+            <button class="send-btn">Send</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
